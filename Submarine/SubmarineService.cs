@@ -9,13 +9,14 @@ public static class SubmarineService
 
         var position = new Position();
 
-        if(commandName == "forward")
+        switch(commandName)
         {
-            position.Horizontal = commandAmount;
-        }
-        else if(commandName == "down")
-        {
-            position.Depth = commandAmount;
+            case "forward": position.Horizontal = commandAmount;
+                break;
+            case "down": position.Depth = commandAmount;
+                break;
+            case "up": position.Depth = -commandAmount;
+                break;
         }
 
         return position;
