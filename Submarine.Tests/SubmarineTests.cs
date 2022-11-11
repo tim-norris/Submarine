@@ -16,4 +16,18 @@ public class SubmarineTests
         Assert.Equal(expected.Horizontal, actual.Horizontal);
 
     }
+
+    [Fact]
+    public void ShouldReturnDepthPosition2FromDown2Command()
+    {
+        var command = "down 2";
+        var expected = new Position
+        {
+            Depth = 2
+        };
+
+        var actual = SubmarineService.CalculatePosition(command);
+
+        Assert.Equal(expected.Depth, actual.Depth);
+    }
 }

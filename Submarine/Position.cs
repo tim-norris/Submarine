@@ -9,5 +9,6 @@ namespace Submarine
     public class Position
     { 
         public int Horizontal;
+        public int Depth;
     }
 }

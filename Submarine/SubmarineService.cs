@@ -13,6 +13,10 @@ public static class SubmarineService
         {
             position.Horizontal = commandAmount;
         }
+        else if(commandName == "down")
+        {
+            position.Depth = commandAmount;
+        }
 
         return position;
     }
