@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submarine.Tests", "Submarine.Tests\Submarine.Tests.csproj", "{C443E87F-E31B-431E-AEA2-33F8D9665AB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submarine", "Submarine\Submarine.csproj", "{FE841F84-C998-4ED7-A4BD-967A75D00B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C443E87F-E31B-431E-AEA2-33F8D9665AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C443E87F-E31B-431E-AEA2-33F8D9665AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C443E87F-E31B-431E-AEA2-33F8D9665AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C443E87F-E31B-431E-AEA2-33F8D9665AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
