@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submarine.Tests", "Submarin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submarine", "Submarine\Submarine.csproj", "{FE841F84-C998-4ED7-A4BD-967A75D00B7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Submarine.Console", "Submarine.console\Submarine.Console.csproj", "{F16AB4F7-5E84-470E-BE91-94E3A490883F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE841F84-C998-4ED7-A4BD-967A75D00B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16AB4F7-5E84-470E-BE91-94E3A490883F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16AB4F7-5E84-470E-BE91-94E3A490883F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16AB4F7-5E84-470E-BE91-94E3A490883F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16AB4F7-5E84-470E-BE91-94E3A490883F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@ public static class SubmarineService
     {
         var submarinePosition = new Position();
         //used Environment.Newline - evaluates to \r\n for non-Unix platforms, or \n for Unix platforms.
-        var commandList = commands.Split(Environment.NewLine).ToList();
+        var commandList = commands.Split("\n").ToList();
 
         commandList.ForEach(command =>
         {
