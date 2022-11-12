@@ -71,7 +71,7 @@ public class SubmarineTests
 
         var actual = SubmarineService.CalculatePosition(command);
 
-        Assert.Equal(expected.Horizontal, actual.Horizontal);
+        Assert.Equal(expected.Depth, actual.Depth);
 
     }
 
