@@ -10,5 +10,6 @@ namespace Submarine
     { 
         public int Horizontal;
         public int Depth;
+        public int Product => Horizontal * Depth;
     }
 }

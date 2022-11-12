@@ -4,6 +4,7 @@ public static class SubmarineService
     public static Position CalculatePosition(string commands)
     {
         var submarinePosition = new Position();
+        //used Environment.Newline - evaluates to \r\n for non-Unix platforms, or \n for Unix platforms.
         var commandList = commands.Split(Environment.NewLine).ToList();
 
         commandList.ForEach(command =>
