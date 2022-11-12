@@ -45,4 +45,19 @@ public class SubmarineTests
         Assert.Equal(expected.Depth, actual.Depth);
     }
 
+    [Fact]
+    public void ShouldReturnHorizontalPosition10FromTwoForward5Commands()
+    {
+        var command = $"forward 5{Environment.NewLine}forward 5";
+        var expected = new Position
+        {
+            Horizontal = 10
+        };
+
+        var actual = SubmarineService.CalculatePosition(command);
+
+        Assert.Equal(expected.Horizontal, actual.Horizontal);
+
+    }
+
 }

@@ -1,7 +1,22 @@
 ﻿namespace Submarine;
 public static class SubmarineService
 {
-    public static Position CalculatePosition(string command)
+    public static Position CalculatePosition(string commands)
+    {
+        var submarinePosition = new Position();
+        var commandList = commands.Split(Environment.NewLine).ToList();
+
+        commandList.ForEach(command =>
+        {
+            var commandMovementPosition = GetPositionFromCommand(command);
+            submarinePosition.Horizontal += commandMovementPosition.Horizontal;
+            submarinePosition.Depth += commandMovementPosition.Depth;
+        });
+       
+        return submarinePosition;
+    }
+
+    private static Position GetPositionFromCommand(string command)
     {
         var commandSplit = command.Split(" ");
         var commandName = commandSplit[0];
@@ -9,13 +24,16 @@ public static class SubmarineService
 
         var position = new Position();
 
-        switch(commandName)
+        switch (commandName)
         {
-            case "forward": position.Horizontal = commandAmount;
+            case "forward":
+                position.Horizontal = commandAmount;
                 break;
-            case "down": position.Depth = commandAmount;
+            case "down":
+                position.Depth = commandAmount;
                 break;
-            case "up": position.Depth = -commandAmount;
+            case "up":
+                position.Depth = -commandAmount;
                 break;
         }
 
