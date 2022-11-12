@@ -60,4 +60,19 @@ public class SubmarineTests
 
     }
 
+    [Fact]
+    public void ShouldReturnDepthPosition4FromTwoDown2Commands()
+    {
+        var command = $"down 2{Environment.NewLine}down 2";
+        var expected = new Position
+        {
+            Depth = 4
+        };
+
+        var actual = SubmarineService.CalculatePosition(command);
+
+        Assert.Equal(expected.Horizontal, actual.Horizontal);
+
+    }
+
 }
