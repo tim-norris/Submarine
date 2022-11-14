@@ -25,4 +25,10 @@
     <ProjectReference Include="..\Submarine\Submarine.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="submarine_kata_input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

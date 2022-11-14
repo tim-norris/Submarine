@@ -112,4 +112,25 @@ public class SubmarineTests
 
     }
 
+
+    [Fact]
+    public void ShouldReadFileAndHaveCorrectValues()
+    {
+        string commands = File.ReadAllText(@"submarine_kata_input.txt");
+        var position = SubmarineService.CalculatePosition(commands);
+
+        var expected = new Position
+        {
+            Horizontal = 2052,
+            Depth = 1032,
+        };
+
+        var actual = SubmarineService.CalculatePosition(commands);
+
+        Assert.Equal(expected.Horizontal, actual.Horizontal);
+        Assert.Equal(expected.Depth, actual.Depth);
+        Assert.Equal(2117664, actual.Product);
+
+    }
+
 }
